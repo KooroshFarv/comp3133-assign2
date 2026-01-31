@@ -13,14 +13,31 @@ describe("Calc Tests", function () {
     //     expect(result).to.equal(8)
     // });
 
-    it('sub pass: sub(24,3) should return 21', function() {
-        const result = calc.sub(24,3)
-        console.log('pass: sub(24,3) expected 21, and got', result)
-        expect(result).to.equal(21)
+    // it('sub pass: sub(24,3) should return 21', function() {
+    //     const result = calc.sub(24,3)
+    //     console.log('pass: sub(24,3) expected 21, and got', result)
+    //     expect(result).to.equal(21)
+    // })
+    // it('sub fail: sub(24,3) should return 17', function() {
+    //     const result = calc.sub(24,3)
+    //     console.log('fail: sub(24,3) expected 17, got', result)
+    //     expect(result).to.equal(17)
+    // })
+
+
+
+
+
+    it('multiple pass: multiple(200, 12) should return 2400', function() {
+        const result = calc.mul(200, 12)
+        console.log('pass: multiple(200, 12) expected 2400 and got', result)
+        expect(result).to.equal(2400)
     })
-    it('sub fail: sub(24,3) should return 17', function() {
-        const result = calc.sub(24,3)
-        console.log('fail: sub(24,3) expected 17, got', result)
-        expect(result).to.equal(17)
+
+    it('multiple fail: multiple(200, 12) should return 2250', function() {
+        const result = calc.mul(200, 12)
+        console.log('fail: multiple(200, 12) expected 2250, got', result)
+        expect(result).to.equal(2250)
     })
+
 })
