@@ -1,15 +1,26 @@
 const { expect } = require("chai")
 const calc = require("../app/calculator")
 describe("Calc Tests", function () {
-    it('add pass: add(7,2) should return 9', function() {
-        const result = calc.add(7,2)
-        console.log('pass: add(7,2 expected 9, got', result)
-        expect(result).to.equal(9)
-    });
+    // it('add pass: add(7,2) should return 9', function() {
+    //     const result = calc.add(7,2)
+    //     console.log('pass: add(7,2 expected 9, got', result)
+    //     expect(result).to.equal(9)
+    // });
 
-    it('add fail: add(7,2 should return 8', function() {
-        const result = calc.add(7,2)
-        console.log('fail: add(7,2 expected 8', result)
-        expect(result).to.equal(8)
-    });
+    // it('add fail: add(7,2 should return 8)', function() {
+    //     const result = calc.add(7,2)
+    //     console.log('fail: add(7,2 expected 8', result)
+    //     expect(result).to.equal(8)
+    // });
+
+    it('sub pass: sub(24,3) should return 21', function() {
+        const result = calc.sub(24,3)
+        console.log('pass: sub(24,3) expected 21, and got', result)
+        expect(result).to.equal(21)
+    })
+    it('sub fail: sub(24,3) should return 17', function() {
+        const result = calc.sub(24,3)
+        console.log('fail: sub(24,3) expected 17, got', result)
+        expect(result).to.equal(17)
+    })
 })
